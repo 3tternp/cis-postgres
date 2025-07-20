@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# CIS PostgreSQL 16 Audit with Tabular Report, Banner, Summary
+# CIS PostgreSQL Audit with Tabular Report, Banner, Summary
 PG_VER="16"
 PG_SERVICE="postgresql-${PG_VER}"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
@@ -13,7 +13,7 @@ FAIL=0
 clear
 echo -e "\033[1;34m"
 echo "#############################################################"
-echo "#           CIS PostgreSQL 16 Security Audit Tool           #"
+echo "#           CIS PostgreSQL Security Audit Tool              #"
 echo "#                HTML Tabular Report Format                 #"
 echo "#############################################################"
 echo -e "\033[0m"
@@ -34,7 +34,7 @@ psql_query() {
 
 # Start HTML
 cat <<EOF > "$HTML_REPORT"
-<html><head><title>CIS PostgreSQL 16 Report</title>
+<html><head><title>CIS PostgreSQL Report</title>
 <style>
 body { font-family: Arial; }
 table { border-collapse: collapse; width: 100%; }
