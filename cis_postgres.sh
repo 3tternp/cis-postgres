@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# CIS PostgreSQL 16 Benchmark Audit Script with HTML Output, Banner, and Dynamic Output Path
-# Author: ChatGPT
+# CIS PostgreSQL Benchmark Audit Script with HTML Output, Banner, and Dynamic Output Path
+# Author: Astra
 # Version: Extended with Banner & Output Directory Fix
 
 PG_VER="16"
@@ -17,15 +17,15 @@ clear
 echo -e "\033[1;34m"
 echo "###############################################################"
 echo "#                                                             #"
-echo "#         CIS PostgreSQL 16 Benchmark Audit Utility           #"
+echo "#         CIS PostgreSQL Benchmark Audit Utility              #"
 echo "#            Security Configuration Check Script              #"
 echo "#                                                             #"
 echo "###############################################################"
 echo -e "\033[0m"
 
 # Start HTML Report
-echo "<html><head><title>CIS PostgreSQL 16 Audit Report</title></head><body>" > "$HTML_REPORT"
-echo "<h1 style='color:#003366;'>CIS PostgreSQL 16 Benchmark Audit Report</h1>" >> "$HTML_REPORT"
+echo "<html><head><title>CIS PostgreSQL Audit Report</title></head><body>" > "$HTML_REPORT"
+echo "<h1 style='color:#003366;'>CIS PostgreSQL Benchmark Audit Report</h1>" >> "$HTML_REPORT"
 echo "<p><strong>Date:</strong> $TIMESTAMP</p>" >> "$HTML_REPORT"
 
 # Consent
