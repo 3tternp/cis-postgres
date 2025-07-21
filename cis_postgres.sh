@@ -14,11 +14,11 @@ clear
 echo -e "\033[1;34m"
 echo "#############################################################"
 echo "#           CIS PostgreSQL Security Audit Tool              #"
-echo "#                HTML Tabular Report Format                 #"
+echo "#           Developed by Astra     Version 1.0              #"
 echo "#############################################################"
 echo -e "\033[0m"
 
-read -p "Do you agree to run this audit? (yes/no): " consent
+read -p "Disclaimer: This Tool does not make any changes to the system. However conducting this activity should be done with prior permisson.Do you agree to run this audit? (yes/no): " consent
 [[ "$consent" != "yes" ]] && echo "Exiting." && exit 1
 
 read -p "Enter OS type (centos/debian): " os_type
